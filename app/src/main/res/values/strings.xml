@@ -5,4 +5,8 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_cart">Cart</string>
     <string name="title_notifications">Notifications</string>
+    <string name="tv_welcome">Hi, welcome!</string>
+    <string name="tv_login">you are login!</string>
+    <string name="tv_logout">logout!</string>
+    <string name="tv_status">Status</string>
 </resources>
