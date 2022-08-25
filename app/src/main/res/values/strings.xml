@@ -6,7 +6,14 @@
     <string name="title_cart">Cart</string>
     <string name="title_notifications">Notifications</string>
     <string name="tv_welcome">Hi, welcome!</string>
-    <string name="tv_login">you are login!</string>
+    <string name="tv_login">Masuk</string>
     <string name="tv_logout">logout!</string>
     <string name="tv_status">Status</string>
+    <string name="tv_password">Password</string>
+    <string name="tv_email">Email</string>
+    <string name="tv_forgot_pass">Lupa kata sandi?</string>
+    <string name="tv_other_method_login">Masuk dengan metode lain</string>
+    <string name="tv_or_other_method">atau masuk dengan</string>
+    <string name="tv_register">Daftar</string>
+    <string name="tv_not_have_account">Belum punya akun?</string>
 </resources>

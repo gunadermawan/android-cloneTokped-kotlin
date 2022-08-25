@@ -33,7 +33,7 @@ class NavigationActivity : AppCompatActivity() {
             R.id.navigation_dashboard,
             R.id.navigation_notifications,
             R.id.navigation_cart))
-        setupActionBarWithNavController(navController, appBarConfiguration)
+//        setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
         navView.setOnItemSelectedListener {
             if (it.itemId == R.id.navigation_cart) {
