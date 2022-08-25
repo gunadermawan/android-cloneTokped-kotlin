@@ -18,5 +18,10 @@
     <color name="colorPrimary_500">#00d437</color>
     <color name="colorPrimary_700">#00b01c</color>
 
+    <color name="colorGray_300">#d3d3d3</color>
+    <color name="colorGray_400">#afafaf</color>
+    <color name="colorGray_500">#8e8e8e</color>
+    <color name="colorGray_700">#535353</color>
+
 
 </resources>

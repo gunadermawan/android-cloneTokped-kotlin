@@ -2,6 +2,7 @@ package com.gunder.tokped.login
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.gunder.tokped.databinding.ActivityLoginBinding
 import com.gunder.tokped.utils.Prefs
@@ -15,11 +16,12 @@ class LoginActivity : AppCompatActivity() {
         setContentView(loginBinding.root)
         val sharedPreferences = Prefs(this)
         if (sharedPreferences.getIsLogin() == true) {
-            loginBinding.tvLogin.visibility = View.VISIBLE
+            loginBinding.tvLogin.visibility = View.INVISIBLE
             loginBinding.tvLogout.visibility = View.INVISIBLE
         } else {
-            loginBinding.tvLogout.visibility = View.VISIBLE
+            loginBinding.tvLogout.visibility = View.INVISIBLE
             loginBinding.tvLogin.visibility = View.INVISIBLE
+            Toast.makeText(this, "kamu belum login!", Toast.LENGTH_SHORT).show()
         }
         loginBinding.btnStatus.setOnClickListener {
             sharedPreferences.setIsLogin(true)
