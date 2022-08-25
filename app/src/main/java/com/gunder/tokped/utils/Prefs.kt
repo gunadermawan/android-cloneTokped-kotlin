@@ -8,7 +8,7 @@ class Prefs(activity: Activity) {
     private var sharedPreferences: SharedPreferences? = null
 
     init {
-        sharedPreferences = activity.getSharedPreferences("MY_PREF", Context.MODE_PRIVATE)
+        sharedPreferences = activity.getSharedPreferences(MY_PREF, Context.MODE_PRIVATE)
     }
 
     fun setIsLogin(value: Boolean) {
@@ -21,5 +21,6 @@ class Prefs(activity: Activity) {
 
     companion object {
         private const val IS_LOGIN = "IS_LOGIN"
+        private const val MY_PREF = "MY_PREF"
     }
 }
