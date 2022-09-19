@@ -21,7 +21,9 @@ class LoginActivity : AppCompatActivity() {
             binding.edtEmail.setText(it)
         }
         binding.btnLogin.setOnClickListener {
-            viewModel.setData()
+            viewModel.login().observe(this, {
+
+            })
         }
     }
 }

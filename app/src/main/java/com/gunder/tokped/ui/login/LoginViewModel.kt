@@ -3,6 +3,7 @@ package com.gunder.tokped.ui.login
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.asLiveData
 import com.gunder.tokped.core.data.repository.AppRepository
 
 class LoginViewModel(val repo: AppRepository) : ViewModel() {
@@ -14,4 +15,6 @@ class LoginViewModel(val repo: AppRepository) : ViewModel() {
     fun setData() {
         _text.postValue("Hi, i'm android dev")
     }
+
+    fun login() = repo.login().asLiveData()
 }
