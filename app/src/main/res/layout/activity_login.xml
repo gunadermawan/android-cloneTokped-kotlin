@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.login.LoginActivity">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_email"
@@ -86,7 +86,7 @@
         app:layout_constraintVertical_bias="0.066" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton"
+        android:id="@+id/btn_login"
         android:layout_width="0dp"
         android:layout_height="48sp"
         android:layout_marginTop="16dp"
@@ -108,8 +108,8 @@
         app:layout_constraintEnd_toStartOf="@+id/tv_other_method"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="@id/tv_other_method"
-        app:layout_constraintStart_toStartOf="@+id/materialButton"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton"
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
         app:layout_constraintVertical_bias="0.49" />
 
     <TextView
@@ -118,9 +118,9 @@
         android:layout_height="wrap_content"
         android:text="@string/tv_or_other_method"
         app:layout_constraintBottom_toTopOf="@+id/materialButton2"
-        app:layout_constraintEnd_toEndOf="@+id/materialButton"
-        app:layout_constraintStart_toStartOf="@+id/materialButton"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
     <View
         android:id="@+id/view2"
@@ -129,7 +129,7 @@
         android:layout_marginStart="32dp"
         android:background="@color/colorGray_500"
         app:layout_constraintBottom_toBottomOf="@+id/view1"
-        app:layout_constraintEnd_toEndOf="@+id/materialButton"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
         app:layout_constraintRight_toRightOf="@id/tv_other_method"
         app:layout_constraintStart_toEndOf="@+id/tv_other_method"
         app:layout_constraintTop_toTopOf="@+id/view1" />
@@ -147,10 +147,10 @@
         app:iconSize="20dp"
         app:iconTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/materialButton"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/materialButton"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton"
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
         app:layout_constraintVertical_bias="0.103" />
 
     <TextView

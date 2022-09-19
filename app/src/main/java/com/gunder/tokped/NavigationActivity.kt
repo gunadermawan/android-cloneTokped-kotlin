@@ -6,11 +6,10 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.gunder.tokped.databinding.ActivityNavigationBinding
-import com.gunder.tokped.login.LoginActivity
+import com.gunder.tokped.ui.login.LoginActivity
 import com.gunder.tokped.utils.Prefs
 
 class NavigationActivity : AppCompatActivity() {
