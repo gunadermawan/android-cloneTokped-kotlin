@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import com.gunder.tokped.core.data.repository.AppRepository
+import com.gunder.tokped.core.data.source.remote.request.LoginRequest
 
 class LoginViewModel(val repo: AppRepository) : ViewModel() {
     private val _text = MutableLiveData<String>().apply {
@@ -16,5 +17,5 @@ class LoginViewModel(val repo: AppRepository) : ViewModel() {
         _text.postValue("Hi, i'm android dev")
     }
 
-    fun login() = repo.login().asLiveData()
+    fun login(data:LoginRequest) = repo.login(data).asLiveData()
 }

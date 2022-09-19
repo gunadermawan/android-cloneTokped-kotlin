@@ -2,6 +2,7 @@ package com.gunder.tokped.ui.login
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.gunder.tokped.core.data.source.remote.request.LoginRequest
 import com.gunder.tokped.databinding.ActivityLoginBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -21,9 +22,11 @@ class LoginActivity : AppCompatActivity() {
             binding.edtEmail.setText(it)
         }
         binding.btnLogin.setOnClickListener {
-            viewModel.login().observe(this, {
+            val body =
+                LoginRequest(binding.edtEmail.text.toString(), binding.edtPassword.text.toString())
+            viewModel.login(body).observe(this) {
 
-            })
+            }
         }
     }
 }
