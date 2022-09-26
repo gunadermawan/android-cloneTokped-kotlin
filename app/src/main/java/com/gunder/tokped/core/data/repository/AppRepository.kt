@@ -5,6 +5,7 @@ import com.gunder.tokped.core.data.source.local.LocalDataSource
 import com.gunder.tokped.core.data.source.remote.RemoteDataSource
 import com.gunder.tokped.core.data.source.remote.network.Resource
 import com.gunder.tokped.core.data.source.remote.request.LoginRequest
+import com.inyongtisto.myhelper.extension.getErrorBody
 import kotlinx.coroutines.flow.flow
 
 class AppRepository(val local: LocalDataSource, val remote: RemoteDataSource) {
@@ -19,8 +20,8 @@ class AppRepository(val local: LocalDataSource, val remote: RemoteDataSource) {
                     }
                     Log.i(LOGIN, body.toString())
                 } else {
-                    emit(Resource.error(it.body()?.message ?: "default error!", null))
-                    Log.e(LOGIN, it.message())
+                    emit(Resource.error(it.getErrorBody()?.message ?: "default error", null))
+                    Log.e(LOGIN, "Error: Login Failed because ${it.message()}")
                 }
             }
 

@@ -1,12 +1,13 @@
 package com.gunder.tokped.ui.login
 
 import android.os.Bundle
-import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.gunder.tokped.core.data.source.remote.network.State
 import com.gunder.tokped.core.data.source.remote.request.LoginRequest
 import com.gunder.tokped.databinding.ActivityLoginBinding
+import com.inyongtisto.myhelper.extension.dismisLoading
+import com.inyongtisto.myhelper.extension.showLoading
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class LoginActivity : AppCompatActivity() {
@@ -40,14 +41,14 @@ class LoginActivity : AppCompatActivity() {
         viewModel.login(body).observe(this) {
             when (it.state) {
                 State.LOADING -> {
-                    binding.pb.visibility = View.VISIBLE
+                    showLoading()
                 }
                 State.SUCCESS -> {
-                    binding.pb.visibility = View.GONE
+                    dismisLoading()
                     Toast.makeText(this, "Welcome back " + it.data?.name, Toast.LENGTH_SHORT).show()
                 }
                 State.ERROR -> {
-                    binding.pb.visibility = View.GONE
+                    dismisLoading()
                     Toast.makeText(this, "Something went wrong:  " + it.message, Toast.LENGTH_SHORT)
                         .show()
                 }
