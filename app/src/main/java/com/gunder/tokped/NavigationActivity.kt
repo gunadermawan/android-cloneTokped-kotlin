@@ -36,8 +36,7 @@ class NavigationActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
         navView.setOnItemSelectedListener {
             if (it.itemId == R.id.navigation_cart) {
-                val sp = Prefs(this)
-                if (sp.getIsLogin() == true) {
+                if (Prefs.isLogin) {
                     navController.navigate(it.itemId)
                     Log.d("TAG", "onCreate: you're login!")
                 } else {
