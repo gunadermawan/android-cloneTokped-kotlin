@@ -35,7 +35,7 @@ class NavigationActivity : AppCompatActivity() {
 //        setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
         navView.setOnItemSelectedListener {
-            if (it.itemId == R.id.navigation_cart) {
+            if (it.itemId == R.id.navigation_notifications) {
                 if (Prefs.isLogin) {
                     navController.navigate(it.itemId)
                     Log.d("TAG", "onCreate: you're login!")
@@ -46,7 +46,7 @@ class NavigationActivity : AppCompatActivity() {
                 Log.d("TAG", "onCreate: cart clicked")
             } else {
                 navController.navigate(it.itemId)
-                Log.d("TAG", "onCreate: cart not clicked")
+                Log.d("TAG", "onCreate: account not clicked")
             }
             return@setOnItemSelectedListener true
         }

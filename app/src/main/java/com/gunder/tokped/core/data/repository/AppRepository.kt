@@ -17,8 +17,10 @@ class AppRepository(val local: LocalDataSource, val remote: RemoteDataSource) {
                 if (it.isSuccessful) {
                     Prefs.isLogin = true
                     val body = it.body()
+                    val user = body?.data
+                    Prefs.setUser(user)
                     if (body != null) {
-                        emit(Resource.success(body.data))
+                        emit(Resource.success(user))
                     }
                     Log.i(LOGIN, body.toString())
                 } else {

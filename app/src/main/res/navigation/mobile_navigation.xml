@@ -21,12 +21,12 @@
         android:id="@+id/navigation_cart"
         android:name="com.gunder.tokped.ui.cart.CartFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_accounts" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.gunder.tokped.ui.notifications.NotificationsFragment"
+        android:name="com.gunder.tokped.ui.account.AccountsFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_accounts" />
 
 </navigation>

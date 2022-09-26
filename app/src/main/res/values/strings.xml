@@ -5,9 +5,10 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_cart">Cart</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_account">Account</string>
     <string name="tv_welcome">Hi, welcome!</string>
-    <string name="tv_login">Masuk</string>
-    <string name="tv_logout">logout!</string>
+    <string name="tv_login">Login</string>
+    <string name="tv_logout">Logout!</string>
     <string name="tv_status">Status</string>
     <string name="tv_password">Password</string>
     <string name="tv_email">Email</string>
@@ -16,4 +17,7 @@
     <string name="tv_or_other_method">atau masuk dengan</string>
     <string name="tv_register">Daftar</string>
     <string name="tv_not_have_account">Belum punya akun?</string>
+    <string name="iv_account_user_icon">account user icon</string>
+    <string name="tv_username">Username</string>
+    <string name="tv_phone">Phone Number</string>
 </resources>
