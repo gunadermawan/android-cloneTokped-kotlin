@@ -17,7 +17,13 @@
     <string name="tv_or_other_method">atau masuk dengan</string>
     <string name="tv_register">Daftar</string>
     <string name="tv_not_have_account">Belum punya akun?</string>
+    <string name="tv_have_account">Punya akun?</string>
     <string name="iv_account_user_icon">account user icon</string>
     <string name="tv_username">Username</string>
     <string name="tv_phone">Phone Number</string>
+    <string name="text_view_privacy_police">Kebijakan Privasi</string>
+    <string name="tv_also">serta</string>
+    <string name="text_view_term_condition">dan ketentuan</string>
+    <string name="text_view_condition">Syarat</string>
+    <string name="text_view_with_register">Dengan mendaftar, saya menyetujui</string>
 </resources>
