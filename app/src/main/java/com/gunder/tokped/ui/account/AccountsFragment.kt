@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.gunder.tokped.databinding.FragmentAccountsBinding
-import com.gunder.tokped.ui.login.LoginActivity
+import com.gunder.tokped.ui.auth.LoginActivity
 import com.gunder.tokped.utils.Prefs
 import com.inyongtisto.myhelper.extension.pushActivity
 
