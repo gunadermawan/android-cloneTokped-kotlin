@@ -13,6 +13,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
+        app:endIconMode="clear_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -154,21 +155,21 @@
         app:layout_constraintVertical_bias="0.103" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textView_condition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="68dp"
         android:text="@string/tv_register"
         android:textColor="@color/colorPrimary"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_not_have_account"
         app:layout_constraintEnd_toEndOf="@+id/materialButton2"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/textView_not_have_account"
+        app:layout_constraintTop_toTopOf="@+id/textView_not_have_account"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView_not_have_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
