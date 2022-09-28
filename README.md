@@ -1,5 +1,8 @@
 # Technologies 
-| Android | Web Laravel |
+| Android | Backend |
 | --- | ----------- |
 | Kotlin | PHP |
-| XML | Laravel |
+| XML | Laravel 8 |
+| MVVM | MVC |
+| Kotlin Koin | Modulation |
+| Material Design | Laravel 8 |
