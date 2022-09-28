@@ -1,2 +1,5 @@
-# Documentation For Programmers
-> API and Configuration
+#Technologies 
+| Android | Web Laravel |
+| --- | ----------- |
+| Kotlin | PHP |
+| XML | Laravel |
