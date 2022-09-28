@@ -1,5 +1,5 @@
 package com.gunder.tokped.utils
 
 object Constant {
-    const val BASE_URL = "http://192.168.100.204/tokped-backend/public/"
+    const val BASE_URL = "http://192.168.100.185/tokped-backend/public/"
 }

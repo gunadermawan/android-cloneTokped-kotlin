@@ -26,4 +26,6 @@
     <string name="text_view_term_condition">dan ketentuan</string>
     <string name="text_view_condition">Syarat</string>
     <string name="text_view_with_register">Dengan mendaftar, saya menyetujui</string>
+    <string name="tv_image_profile">GD</string>
+    <string name="tv_edit_profile">edit profile</string>
 </resources>

@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.gunder.tokped.databinding.FragmentAccountsBinding
 import com.gunder.tokped.ui.auth.LoginActivity
 import com.gunder.tokped.utils.Prefs
+import com.inyongtisto.myhelper.extension.getInitial
 import com.inyongtisto.myhelper.extension.pushActivity
 
 class AccountsFragment : Fragment() {
@@ -46,6 +47,7 @@ class AccountsFragment : Fragment() {
                 tvUsername.text = user.name
                 tvPhone.text = user.phone
                 tvEmail.text = user.email
+                tvIvProfile.text = user.name.getInitial()
             }
         }
     }
