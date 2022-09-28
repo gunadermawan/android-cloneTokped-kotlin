@@ -42,6 +42,7 @@ class NavigationActivity : AppCompatActivity() {
                 } else {
                     startActivity(Intent(this, LoginActivity::class.java))
                     Log.d("TAG", "onCreate: you're not login!")
+                    return@setOnItemSelectedListener false
                 }
                 Log.d("TAG", "onCreate: cart clicked")
             } else {
