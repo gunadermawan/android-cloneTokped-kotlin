@@ -1,4 +1,4 @@
-#Technologies 
+# Technologies 
 | Android | Web Laravel |
 | --- | ----------- |
 | Kotlin | PHP |
