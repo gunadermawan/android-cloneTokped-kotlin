@@ -72,6 +72,7 @@
 
     <ImageView
         android:id="@+id/iv_edit"
+        style="@style/image_clickable"
         android:layout_width="@dimen/dimen_32"
         android:layout_height="@dimen/dimen_32"
         android:layout_marginStart="16dp"
