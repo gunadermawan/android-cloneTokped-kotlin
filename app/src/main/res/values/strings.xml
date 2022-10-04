@@ -16,6 +16,7 @@
     <string name="tv_other_method_login">Masuk dengan metode lain</string>
     <string name="tv_or_other_method">atau masuk dengan</string>
     <string name="tv_register">Daftar</string>
+    <string name="tv_save">Simpan</string>
     <string name="tv_not_have_account">Belum punya akun?</string>
     <string name="tv_have_account">Punya akun?</string>
     <string name="iv_account_user_icon">account user icon</string>

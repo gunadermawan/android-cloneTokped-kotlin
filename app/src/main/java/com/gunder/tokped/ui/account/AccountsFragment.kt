@@ -8,8 +8,10 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.gunder.tokped.databinding.FragmentAccountsBinding
 import com.gunder.tokped.ui.auth.LoginActivity
+import com.gunder.tokped.ui.update.UpdateProfileActivity
 import com.gunder.tokped.utils.Prefs
 import com.inyongtisto.myhelper.extension.getInitial
+import com.inyongtisto.myhelper.extension.intentActivity
 import com.inyongtisto.myhelper.extension.pushActivity
 
 class AccountsFragment : Fragment() {
@@ -29,14 +31,17 @@ class AccountsFragment : Fragment() {
 
         _binding = FragmentAccountsBinding.inflate(inflater, container, false)
         setUser()
-        logout()
+        mainButton()
         return binding.root
     }
 
-    private fun logout() {
+    private fun mainButton() {
         binding.btnLogout.setOnClickListener {
             Prefs.isLogin = false
             pushActivity(LoginActivity::class.java)
+        }
+        binding.ivEdit.setOnClickListener {
+            intentActivity(UpdateProfileActivity::class.java)
         }
     }
 
