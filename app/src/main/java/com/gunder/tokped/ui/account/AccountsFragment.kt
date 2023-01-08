@@ -38,7 +38,7 @@ class AccountsFragment : Fragment() {
     private fun mainButton() {
         binding.btnLogout.setOnClickListener {
             Prefs.isLogin = false
-            pushActivity(LoginActivity::class.java)
+            pushActivity(LoginActivity::class.java,"pinlogin","login")
         }
         binding.ivEdit.setOnClickListener {
             intentActivity(UpdateProfileActivity::class.java)
